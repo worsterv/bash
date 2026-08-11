@@ -1,0 +1,9 @@
+# Basic (recommended starting point)
+lncli openchannel 03fbc17549ec667bccf397ababbcb4cdc0e3394345e4773079ab2774612ec9be61 1000000
+
+# More control (example: 1M sats, 500 sat fee rate, private channel)
+lncli openchannel \
+  --node_key=03fbc17549ec667bccf397ababbcb4cdc0e3394345e4773079ab2774612ec9be61 \
+  --local_amt=1000000 \
+  --sat_per_vbyte=5 \
+  --private
