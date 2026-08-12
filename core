@@ -5,3 +5,10 @@ lightning-cli fundchannel 03fbc17549ec667bccf397ababbcb4cdc0e3394345e4773079ab27
 lightning-cli fundchannel 03fbc17549ec667bccf397ababbcb4cdc0e3394345e4773079ab2774612ec9be61 1000000sat \
   feerate=5pervbyte \
   announce=false
+# LND – check status
+lncli pendingchannels
+lncli listchannels
+
+# CLN
+lightning-cli listfunds
+lightning-cli listpeers
